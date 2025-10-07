@@ -16,8 +16,7 @@
 
 }
 body {
-     background-color:#DCE0E6	rgb(220, 224, 230);
-  
+     background-color:#DCE0E6	
 }
 
 
@@ -545,6 +544,154 @@ body {
     text-align: right;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+   body {
+      overflow-x: hidden;
+   }
+
+   .cabecalho nav ul {
+      flex-wrap: wrap;
+      gap: 10px;
+
+   }
+   .cabecalho nav ul li {
+      font-size: 0.8rem;
+      margin: 0 5px;
+   }
+   .titulo-principal {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 40px;
+      text-align: center;
+      padding: 0 15px;
+   }
+   .titulo-principal h1 {
+      font-size: 2.5rem;
+      justify-content: center;
+      margin-bottom: 20px;
+   }
+   .celular {
+      width: 80%;
+      max-width: 250px;
+      margin-left: 0;
+      height: auto;
+   }
+   /*carrossel*/
+   .carrossel-masrcas-container {
+      overflow-x: scroll;
+   }
+   .carrossel-marcas-trilho {
+      animation: none;
+      width: auto;
+      justify-content: flex-start;
+   }
+   .carrossel-marca {
+      width: 150px;
+   }
+
+   .nova-sessao h2, .titulo-cansado {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+   }
+
+   .video-overlay h2 {
+      font-size: 1.6rem;
+   }
+   .frase-impacto {
+      font-size: 1.4rem;
+   }
+   .esperanca {
+      font-size: 1.2rem;
+   }
+   /*cardes de  serviço*/
+   .lista-servicos {
+      gap: 15px;
+      padding: 0 10px;
+   }
+   .card-servico {
+      flex: 1 1 100%;
+      max-width: 100%;
+
+   }
+   .card-servico i {
+      font-size: 2.5rem;
+   }
+
+   /*bloco reparo*/
+
+   .reparo {
+      flex-direction: column;
+      padding: 20px 10px;
+   }
+   .texto-dor {
+      min-width: 100%;
+      padding-right: 0;
+      margin-bottom: 30px;
+      order: 2;
+   }
+   .imagens-reparo {
+      justify-content: center;
+      width: 100%;
+      order: 1;
+      min-width: auto;
+      margin-bottom: 20px;
+   }
+   /*7. correção de imagens fixas*/
+   .tela-agua {
+      width: 60%;
+      max-width: 200px;
+   }
+   .android-boneco {
+      width: 70%;
+      max-width: 250px;
+      margin-left: 0;
+   }
+   .quebra-fhone {
+      width: 50px;
+   }
+   /*botão flutuante*/
+
+   .botao-zap {
+      right: 15px;
+      bottom: 15px;
+   }
+   .botao-zap button {
+      padding: 12px 25px;
+      font-size: 1rem;
+   }
+
+   /*footer*/
+
+   .footer-content {
+      flex-direction: column;
+      align-items: center;
+   }
+
+    .footer-brand, .footer-social-links, .footer-legal-links, .footer-bottom-row {
+
+      text-align: center;
+      width: 100%;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    .footer-legal-links a {
+      display: block;
+      margin: 10px 0;
+    }
+    .footer-bottom-row {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+    .developer-info, .footer-copyright {
+      text-align: center;
+      width: 100%;
+    }
+
+   
+}
+   
 
 
 
