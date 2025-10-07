@@ -7,13 +7,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color:#DCE0E6	rgb(220, 224, 230);
+  
   
      
    
 
 
 
+}
+body {
+     background-color:#DCE0E6	rgb(220, 224, 230);
+  
 }
 
 
@@ -50,6 +54,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    
     
  }
  .nav-image {
@@ -209,7 +214,7 @@
    display: inline-flex;
    align-items: center;
    gap: 12px;
-   transition: all 0.4 ease-in-out;
+   transition: all 0.4s ease-in-out;
 }
 .botao-zap button i {
    font-size: 1.25rem;
@@ -249,6 +254,89 @@
     /* ... (restante do estilo) */
     transition: all 0.4 ease-in-out;
 }
+
+/* ESTILOS DA NOVA SEÇÃO: ESPECIALIDADES E DIFERENCIAIS */
+.nova-sessao {
+   max-width: 1200px;
+   margin: 50px auto 80px auto;
+   padding: 20px;
+   background-color: transparent;
+   text-align: center;
+}
+.nova-sessao h2 {
+   font-size: 2.5rem;
+   font-weight: 800;
+   color: #5b0e2d;
+   margin-bottom: 40px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-servicos-vidro {
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
+   border-radius: 16px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   padding: 30px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.frase-impacto {
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: #5b0e2d;
+   margin-bottom: 30px;
+   padding: 15px;
+   border-bottom: 2px solid rgba(91, 14, 45, 0.1);
+}
+
+/* ESTILO DA LISTA DE SERVIÇOS EM GRID/FLEX */
+.lista-servicos {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   justify-content: center;
+   padding: 10px;
+}
+
+/* ESTILO DOS CARDS INDIVIDUAIS */
+.card-servico {
+   flex: 1 1 calc(50% - 25px);
+   max-width: calc(50% - 25px);
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   text-align: center;
+   transition: ctransform 0.3s ease, box-shadow 0.3s ease;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card-servico:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.card-servico i {
+   font-size: 3rem;
+   color: #00ffff;
+   background-color: transparent;
+   margin-bottom: 10px;
+   text-shadow: 0 0 10px rgba(0, 255, 255 , 0.5);
+}
+
+.card-servico h4 {
+   font-size: 1.2rem;
+   font-weight: 700;
+   color: #444;
+   margin-bottom: 8px;
+}
+
+.card-servico p {
+   font-size: 0.95rem;
+   color: #666;
+   line-height: 1.4;
+}
+
 
 .footer-section {
     width: 100%;
@@ -352,7 +440,7 @@
     color: #ffffff;
 }
 .developer-info h5 {
-    font-size: 1,1em;
+    font-size: 1.1em;
     color: #00ffff;
     text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
     margin: 0;
