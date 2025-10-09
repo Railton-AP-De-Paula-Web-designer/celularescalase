@@ -551,7 +551,7 @@ body {
    }
 
    .cabecalho nav ul {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 10px;
 
    }
@@ -687,6 +687,143 @@ body {
     .developer-info, .footer-copyright {
       text-align: center;
       width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape)  {
+   /*1-container-principal topo*/
+   .titulo-principal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 0;
+      margin-top: 50px;
+      padding: 0 20px;
+      text-align: left;
+
+   }
+   .titulo-principal h1 {
+      font-size: 2.2em;
+      text-align: left;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      margin-top: 0;
+   }
+
+   .vidro {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .celular {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      margin-left: 0;
+      object-fit: contain;
+   }
+   /*lista de serviços nova container nova- sessao*/
+   .lista-serviços {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 10px 20px;
+   }
+   .card-servico {
+      flex: auto;
+      max-width: 100%;
+      padding: 15px;
+   }
+   .frase-impacto {
+      font-size: 1.5rem;
+   }
+   /* 3. CONTAINER 3 (Estou Cansado de... Reparos)*/
+   .reparo  {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px;
+   }
+   .titulo-cansado {
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+   }
+   .texto-dor {
+      flex-basis: 50%;
+      padding-right: 20px;
+      order: 1;
+      min-width: 40%;
+
+   }
+
+   .texto-dor ul li {
+      font-size: 1em;
+      margin-bottom: 10px;
+   }
+   .esperanca {
+      font-size: 1.1em;
+   }
+   .imagens-reparo {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      order: 2;
+      align-items: center;
+      justify-content: center;
+   }
+   .quebra-fhone, .tela-agua  {
+      max-width: 100%;
+      height: auto;
+   } 
+
+   /* 4. CONTAINER 4 (Bonecos Android)*/
+   .container-4 div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+   }
+
+   .android-boneco {
+      max-width: 45%;
+      height: auto;
+      margin-left: 0;
+   }
+   /*VIDEO E OVERLAY*/
+   .video-container {
+      height: 250px;
+   }
+   .video-overlay h2 {
+      font-size: 1.5em;
+      padding: 10px;
+   }
+
+   /*footer*/
+
+   .footer-content {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   .footer-brand, .footer-social-links,
+    .footer-legal-links {
+      flex-basis: auto;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .footer-bottom-row {
+      flex-direction: row;
+      justify-content: space-between;
     }
 
    
