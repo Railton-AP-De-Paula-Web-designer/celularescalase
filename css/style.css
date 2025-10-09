@@ -578,11 +578,9 @@ body {
       height: auto;
    }
    /*carrossel*/
-   .carrossel-marcas-container {
-      overflow-x: scroll;
-   }
+
    .carrossel-marcas-trilho {
-      animation: none;
+   
       width: auto;
       justify-content: flex-start;
    }
