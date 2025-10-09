@@ -579,14 +579,20 @@ body {
    }
    /*carrossel*/
 
-   .carrossel-marcas-trilho {
-   
-      width: auto;
-      justify-content: flex-start;
-   }
-   .carrossel-marca {
-      width: 150px;
-   }
+  .carrossel-marcas-trilho {
+    animation: slide 25s linear infinite; /* Reativa a animação automática */
+    width: 200%; /* Garante espaço para o slide contínuo */
+    justify-content: flex-start;
+}
+.carrossel-marca {
+    width: calc(100% / 6); /* Mudei para 4 colunas. 4 * 6 = 24 itens visíveis no trilho de 200% */
+}
+/*
+// Linha única corrigida, se for o caso:*/
+.carrossel-marcas-container { 
+    overflow: hidden; /* Garante que a barra de rolagem não apareça */
+}
+  
 
    .nova-sessao h2, .titulo-cansado {
       font-size: 1.8rem;
